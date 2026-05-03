@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+*.joblib
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# Large dataset folders (~2.3 GB) — download from Zenodo/Kaggle instead
+# See README.md for download links
+MASC_Json/
+MASC_UI/
+
+# PDF report — content is in README.md
+MASC_Report.pdf
