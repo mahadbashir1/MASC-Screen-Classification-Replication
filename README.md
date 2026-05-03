@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| **Replicated by** | Hashim Shahid & Mahad Bashir |
+| **Replicated by** | Muhammad Mahad Bashir & Hashim Shahid |
 | **Original Authors** | Moheb R. Girgis, Alaa M. Zaki, Enas Elgeldawi, Mohamed M. Abdallah, Ali A. Ahmed — Minia University, Egypt |
 | **Journal** | International Journal of Computing, Vol. 24, Issue 3, 2025, pp. 460–473 |
 | **DOI** | [https://doi.org/10.47839/ijc.24.3.4183](https://doi.org/10.47839/ijc.24.3.4183) |
@@ -355,5 +355,5 @@ The work makes a valid contribution to mobile application analysis and automated
 
 | Name | GitHub |
 |---|---|
+| **Muhammad Mahad Bashir** | [@mahadbashir1](https://github.com/mahadbashir1) |
 | **Hashim Shahid** | [@hashimrana478-bot](https://github.com/hashimrana478-bot) |
-| **Mahad Bashir** | [@mahadbashir1](https://github.com/mahadbashir1) |
