@@ -6,8 +6,7 @@
 
 | | |
 |---|---|
-| **Replicated by** | Hashim Shahid & Mahad Bashir \| SE-6B |
-| **Course** | Data Science |
+| **Replicated by** | Hashim Shahid & Mahad Bashir |
 | **Original Authors** | Moheb R. Girgis, Alaa M. Zaki, Enas Elgeldawi, Mohamed M. Abdallah, Ali A. Ahmed — Minia University, Egypt |
 | **Journal** | International Journal of Computing, Vol. 24, Issue 3, 2025, pp. 460–473 |
 | **DOI** | [https://doi.org/10.47839/ijc.24.3.4183](https://doi.org/10.47839/ijc.24.3.4183) |
@@ -49,26 +48,7 @@ This report presents a complete replication study of the journal paper **"MASC: 
 
 Mobile app screen classification is critical for automated UI testing, accessibility auditing, design mining, and app store categorization. The paper demonstrates that lightweight, interpretable ML models can match or exceed deep learning approaches when provided with carefully extracted structural features from UI hierarchies.
 
-### Course Algorithm Alignment
 
-Four of the ten classifiers are directly aligned with ML concepts studied in our Data Science course:
-
-| Algorithm | Course Coverage | Role in Paper | Paper Accuracy | Replicated |
-|---|---|---|---|---|
-| Naive Bayes ⭐ | ✅ Studied | Probabilistic baseline classifier | 90.65% | 91.22% |
-| Decision Tree ⭐ | ✅ Studied | Tree-based classification | 92.35% | 90.93% |
-| Logistic Regression ⭐ | ✅ Studied | Linear classification model | 92.63% | 93.91% |
-| Multi-Layer Perceptron ⭐ | ✅ Studied | Neural network classifier | 93.20% | 93.91% |
-| Gradient Boosting | Additional | Best performing ensemble | 93.48% | 94.19% |
-| XGBoost | Additional | Extreme gradient boosting | 93.20% | 93.63% |
-| Random Forest | Additional | Bagging ensemble | 93.06% | 93.77% |
-| SVM Linear | Additional | Support vector classifier | 93.20% | 94.05% |
-| SVM RBF | Additional | Kernel-based SVM | 81.16% | 83.71% |
-| Adaboost | Additional | Adaptive boosting | 83.29% | 85.69% |
-
-⭐ = Algorithm studied in course
-
----
 
 ## 2. Methodology
 
@@ -221,22 +201,22 @@ The original authors' code ([github.com/Ali-Aahmed/MASC-Dataset](https://github.
 
 ### 5.1 Side-by-Side Accuracy Comparison
 
-The table below compares every metric from the original paper (Table 5) against the replicated results. Course-relevant algorithms are marked with ⭐.
+The table below compares every metric from the original paper (Table 5) against the replicated results.
 
 | # | Classifier | Paper Accuracy | Replicated Accuracy | Difference | Paper F1 | Paper ROC-AUC |
 |---|---|---|---|---|---|---|
 | 1 | Gradient Boosting | 93.48% | 94.19% | ▲ +0.71% | 94.39 | 99.60 |
 | 2 | SVM Linear | 93.20% | 94.05% | ▲ +0.85% | 94.27 | 99.48 |
-| 3 | Logistic Regression ⭐ | 92.63% | 93.91% | ▲ +1.28% | 93.69 | 99.48 |
-| 4 | Multi-Layer Perceptron ⭐ | 93.20% | 93.91% | ▲ +0.71% | 94.13 | 99.56 |
+| 3 | Logistic Regression | 92.63% | 93.91% | ▲ +1.28% | 93.69 | 99.48 |
+| 4 | Multi-Layer Perceptron | 93.20% | 93.91% | ▲ +0.71% | 94.13 | 99.56 |
 | 5 | Random Forest | 93.06% | 93.77% | ▲ +0.71% | 94.04 | 99.06 |
 | 6 | XGBoost | 93.20% | 93.63% | ▲ +0.43% | 93.99 | 99.51 |
-| 7 | Naive Bayes ⭐ | 90.65% | 91.22% | ▲ +0.57% | 91.90 | 99.43 |
-| 8 | Decision Tree ⭐ | 92.35% | 90.93% | ▼ -1.42% | 93.01 | 96.91 |
+| 7 | Naive Bayes | 90.65% | 91.22% | ▲ +0.57% | 91.90 | 99.43 |
+| 8 | Decision Tree | 92.35% | 90.93% | ▼ -1.42% | 93.01 | 96.91 |
 | 9 | Adaboost | 83.29% | 85.69% | ▲ +2.40% | 83.93 | 98.36 |
 | 10 | SVM RBF | 81.16% | 83.71% | ▲ +2.55% | 80.90 | 98.04 |
 
-> ⭐ = Course algorithm &nbsp;&nbsp; ▲ = Replicated exceeded paper &nbsp;&nbsp; ▼ = Slightly below paper
+> ▲ = Replicated exceeded paper &nbsp;&nbsp; ▼ = Slightly below paper
 >
 > **All results are within ±2.55% of the paper's reported values.**
 
@@ -292,13 +272,13 @@ Confusion matrices for all 10 classifiers, showing classification performance ac
 |:---:|:---:|
 | ![RF CM](figures/confusion_matrices/confusion_matrix_Random%20Forest.png) | ![Ada CM](figures/confusion_matrices/confusion_matrix_Adaboost.png) |
 
-#### ⭐ Course Algorithms
+#### Classical & Probabilistic Models
 
-| Logistic Regression ⭐ (93.91%) | Multi-Layer Perceptron ⭐ (93.91%) |
+| Logistic Regression (93.91%) | Multi-Layer Perceptron (93.91%) |
 |:---:|:---:|
 | ![LR CM](figures/confusion_matrices/confusion_matrix_Logistic%20Regression.png) | ![MLP CM](figures/confusion_matrices/confusion_matrix_Multi-Layer%20Perceptron.png) |
 
-| Decision Tree ⭐ (90.93%) | Naive Bayes ⭐ (91.22%) |
+| Decision Tree (90.93%) | Naive Bayes (91.22%) |
 |:---:|:---:|
 | ![DT CM](figures/confusion_matrices/confusion_matrix_Decision%20Tree.png) | ![NB CM](figures/confusion_matrices/confusion_matrix_Naive%20Bayes.png) |
 
@@ -312,7 +292,7 @@ Confusion matrices for all 10 classifiers, showing classification performance ac
 
 ## 6. Discussion & Conclusion
 
-### 6.1 Analysis of the Four Course Algorithms
+### 6.1 Algorithm Analysis
 
 - **Naive Bayes (91.22%)**: Performed well due to the strong discriminative keyword feature. Main weakness is Search-vs-List confusion (20 misclassifications) caused by similar UI element distributions in both classes, which violates the feature independence assumption.
 
@@ -341,7 +321,7 @@ This replication study **successfully reproduced all key results** of the MASC p
 1. **Core claim validated**: Classical ML with structural features achieves >93% accuracy for mobile screen classification
 2. **Gradient Boosting is the top performer** (94.19%), consistent with the paper's findings
 3. **8 of 10 classifiers exceeded** the paper's reported accuracy, with only Decision Tree slightly below
-4. **Course algorithms performed well**: Naive Bayes (91.22%), Decision Tree (90.93%), Logistic Regression (93.91%), MLP (93.91%)
+4. **Classical models performed strongly**: Naive Bayes (91.22%), Decision Tree (90.93%), Logistic Regression (93.91%), MLP (93.91%)
 5. **Feature engineering matters**: The 11-feature extraction pipeline is the key contribution — it enables simple classifiers to achieve high accuracy without deep learning
 6. **The methodology is reproducible**, though the original code required 9 bug fixes before execution
 
